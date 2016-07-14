@@ -1,0 +1,19 @@
+### Node template
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+
+## Directory-based project format:
+.idea/
+# if you remove the above rule, at least ignore the following:
+
+
+# Dependency directory
+/node_modules/
