@@ -8,8 +8,8 @@
 
 module.exports = {
   status: 403,
-  name: 'forbidden',
-  code: 'E_NON_MATCHED',
+  name: 'notMatched',
+  code: 'E_NOT_MATCHED',
   message: 'User id not matches the current user',
   data: {}
 };

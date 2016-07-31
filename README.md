@@ -29,7 +29,6 @@ function login(req, res){
 
 res.ok({}) => return :{  
                 status: 200,
-                name: 'ok',
                 code: "OK",
                 message: 'Operation is successfully executed',
                 data: { }
@@ -37,7 +36,6 @@ res.ok({}) => return :{
            
 res.created({}) => return :{
              status: 201,
-             name: 'created',
              code: 'CREATED',
              message: 'The request has been fulfilled and resulted in a new resource being created',
              data: {}
@@ -45,7 +43,6 @@ res.created({}) => return :{
            
 res.notFound({}) => return :{
              status: 404,
-             name: 'notFound',
              code: 'E_NOT_FOUND',
              message: 'The requested resource could not be found but may be available again in the future',
              data: {}

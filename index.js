@@ -9,14 +9,15 @@ module.exports = [
     require('./responses/serverError'),
     require('./responses/unauthorized'),
     require('./responses/tokenExpired'),
-    require('./responses/conflict')
+    require('./responses/conflict'),
+    require('./responses/notMatched')
 ].map(function (desc) {
     return function (req, res, next) {
         res[desc.name] = function (data, code, message) {
             if (data instanceof Error) {
                 // log error 
                 debug(data);
-                
+
                 // clear data variable, do not send it to client
                 data = undefined;
             }
